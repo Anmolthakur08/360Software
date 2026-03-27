@@ -1,0 +1,522 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form input,
+form button {
+    padding: 8px;
+    margin: 5px;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+span {
+    color: green;
+    margin-top: 10px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.custom-form-container {
+    height: 520px;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.maindistoreimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+.viewer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    margin-top: 20px;
+}
+
+
+#panorama {
+    width: 400px;
+    height: 350px;
+}
+
+#map {
+    width: 600px;
+    height: 350px;
+}
+
+.selectable-image.selected {
+    box-shadow: 0 0 30px rgba(228, 3, 52, 0.5);
+    transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.custom-form-container {
+    height: auto;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.navdiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.gobackbtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gobackbtn a {
+    text-decoration: none;
+    color: white;
+}
+
+div#UpdateImgForm {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+    gap: 20px;
+    align-items: center;
+
+}
+
+div#UpdateImgForm .custom-form-container {
+    max-width: 310px;
+    width: 100%;
+    background: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 4px #ddd;
+}
+div#UpdateImgForm .custom-form-container h1{
+    word-wrap: break-word;
+}
+.view-inner {
+    width: 100%;
+    display: flex
+;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+div#UpdateImgForm .viewer-wrapper {
+      max-width: calc(100% - 330px);
+    width: 100%;
+}
+
+div#UpdateImgForm .viewer-wrapper div#map {
+    width: 49% !important;
+}
+
+div#UpdateImgForm .viewer-wrapper div#panorama {
+    width: 48%;
+}
+
+div#UpdateImgForm .custom-form-container h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+div#UpdateImgForm .custom-form-container form#imageForm br {
+    display: none;
+}
+
+div#UpdateImgForm .custom-form-container form#imageForm input {
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid #ddd;
+    padding: 7px 12px;
+    font-size: 15px;
+}
+
+div#UpdateImgForm .custom-form-container form#imageForm label {
+    font-size: 16px;
+    margin: 10px 0px 0px;
+    font-weight: 600;
+    color: #000;
+}
+
+.navdiv {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+div#UpdateImgForm .custom-form-container form#imageForm button {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #0d6efd;
+    color: #fff;
+    padding: 7px 0px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.map-site {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.center-container form#storeForm {
+    max-width: 710px;
+    width: 100%;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.center-container form#storeForm br {
+    display: none;
+}
+
+.center-container form#storeForm input#storeName {
+    color: #000;
+    width: 270px;
+    border: 1px solid #ddd;
+}
+
+.center-container form#storeForm button#submitBtn {
+    background: #198754;
+    color: #fff;
+    max-width: 200px;
+    width: 100%;
+    border: 1px solid #198754;
+}
+
+.modal-dialog .modal-body form {
+    margin: 0;
+}
+
+.modal-dialog .modal-body form br {
+    display: none;
+}
+
+.modal-dialog .modal-body form .modal-footer {
+    margin-top: 10px;
+}
+
+.modal-dialog .modal-body input#newImage {
+    margin: 0;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.map-site p {
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.image-box {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #444;
+    cursor: move;
+    border-radius: 4px;
+    user-select: none;
+    object-fit: cover;
+}
+
+svg#lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#viewerModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+}
+
+#viewer {
+    width: 100%;
+    height: 100%;
+}
+
+
+.loader-wrapper {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.loader-wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.headingdiv {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+
+ .btndeg {
+    display: flex;
+    gap: 10px;
+}
+
+.placeNameshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+.map-site.sortable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.sortable  .imgtitle {
+    max-width: 220px;
+    width: 100%;
+    word-break: break-word;
+}
+
+.map-site.sortable>div {
+    width: calc(100% / 5 - 24px);
+}
+
+.streetBtndiv .streetbtn button#submitBtn {
+    background-color: #0D6EFD;
+    color: #FFF;
+    border: unset;
+    padding: 6px 12px;
+    font-size: 16px;
+    height: 38px;
+    border-radius: 6px;
+ 
+}
+
+.streetBtndiv .streetbtn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0px;
+}
+
+
+.streetBtndiv .streetbtn .gobackbtn {
+    position: absolute;
+    right: 0;
+    margin-right: 16px;
+    top: 0;
+}
+
+.streetBtndiv {
+    padding-top: 8px;
+}
+
+.navdiv a.btn.btn-primary.ms-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gobackbtn {
+    height: 60px;
+}
+
+a.btn.btn-primary.ms-2 {
+    height: 60px;
+}
+
+.placeNameshow {
+    max-width: max-content;
+}
+
+div#placeResults {
+    max-height: 500px;
+    overflow-x: scroll;
+}
+
+
+/* 11 july 25 */
+h2.h2head {
+    text-align: center;
+}
+
+button.gbutton {
+    margin-inline: auto;
+    display: block;
+    background: #fff;
+    color: #0d6efd;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    max-width: fit-content;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+button.gbutton:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+
+
+
+div#storeTable_filter {
+    margin-bottom: 30px;
+}
+div#storeTable_length {
+    clear: both;
+    float: left;
+}
+table#storeTable thead th {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+div#storeTable_paginate {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+div#storeTable_paginate span {
+    margin: 0;
+}
+div#storeTable_info {
+    padding-top: 30px;
+}
+
+.navdiv {
+    align-items: center;
+}
+.navdiv .top-nav-btn {
+    margin: 0 !important;
+}
+.navdiv p {
+    margin-bottom: 0;
+    text-align: center;
+}
+.maindistoreimg {
+    align-items: flex-start !important;
+    padding-top: 20px !important;
+}
+.maindistoreimg .viewer-wrapper {
+    margin-top: 0;
+}
+.maindistoreimg .custom-form-container {
+    height: 100% !important;
+}
+.navdiv button.nav-btn {
+    min-height: 60px;
+    margin-left: 7px;
+}
+
+
+
+
+.streetbtn.text-center {
+    gap: 10px;
+}
+
+.streetbtn.text-center .gobackbtn.btn.btn-primary {
+    height: 38px;
+    top: 20px;
+}
